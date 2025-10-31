@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  background: rgba(15, 23, 42, 0.9);
+  position: fixed; top: 0; width: 100%;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 50px;
+}
+
+.logo { color: #fff; font-weight: 700; }
+.logo span { color: #00ffcc; }
+
+.nav-links { list-style: none; display: flex; gap: 25px; }
+.nav-links a { text-decoration: none; color: #fff; transition: 0.3s; }
+.nav-links a:hover, .nav-links .active { color: #00ffcc; }
+
+.contact {
+  padding: 150px 50px 80px;
+  text-align: center;
+}
+.contact h1 {
+  color: #00ffcc;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.contact-info {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+.contact-info a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+.contact-info a:hover { text-decoration: underline; }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}

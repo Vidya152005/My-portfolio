@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  background: rgba(15, 23, 42, 0.9);
+  position: fixed; top: 0; width: 100%;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 50px;
+}
+
+.logo { color: #fff; font-weight: 700; }
+.logo span { color: #00ffcc; }
+
+.nav-links { list-style: none; display: flex; gap: 25px; }
+.nav-links a { text-decoration: none; color: #fff; transition: 0.3s; }
+.nav-links a:hover, .nav-links .active { color: #00ffcc; }
+
+.about {
+  padding: 150px 50px;
+  text-align: center;
+}
+.about h1 {
+  color: #00ffcc;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+footer { text-align: center; padding: 20px; color: #94a3b8; }
+/* 🔮 Fade-Up Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-in-out;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
